@@ -94,3 +94,8 @@ section {
 #specialties {
     display: none;
 }
+
+hr {
+    width: 50%;
+    color: #212845;
+}
