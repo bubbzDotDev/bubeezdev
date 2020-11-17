@@ -71,6 +71,7 @@ section {
 
 .projectLogos {
     width: 100px;
+    border-radius: 15px;
 }
 
 .logoWidth {
