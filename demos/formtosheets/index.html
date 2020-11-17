@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Form to Google Sheets Example</title>
+</head>
+<body>
+    <h1>Form to Google Sheets Example</h1>
+    <form name="submit-to-google-sheet">
+        <input id="email" name="email" type="email" placeholder="Email" required>
+        <input id="firstName" name="firstName" type="text" placeholder="First Name">
+        <input id="lastName" name="lastName" type="text" placeholder="Last Name">
+        <button type="submit" onclick="thankYou()">Save</button>
+      </form>
+      
+      <h3>View results live:</h3>
+      <p>
+          <a href="https://docs.google.com/spreadsheets/d/1utM41Xybx7zxlCZ67ao0MoNUeZS8-gZl4_P1iXb3RWs/edit?usp=sharing" target="_blank">Google Sheets Results</a>
+      </p>
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZv7PQAkJt7pGPjqLfi8vLk2XkUmdDismanuX82Tu-_mCtB2_Y/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
