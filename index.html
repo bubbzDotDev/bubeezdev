@@ -6,79 +6,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>bubeez development</title>
 </head>
 <body>
-    <div id="nav">
-        <ul>
-            <li><a href="https://www.bubeez.dev">HOME</a></li>
-            <li><a onclick="about()">ABOUT</a></li>
-            <li><a onclick="specialties()">SPECIALTIES</a></li>
-        </ul>
-    </div>
-    <div id="top">
-        <br>
-        <img id="logo" src="./images/logo_white.png" alt="bubeez development logo">
-    </div>
-    <div>
-        <section id="projects">
-            <div>
-                <h1>Projects</h1>
-                <p>
-                    <h3>September 2020 - (Ongoing)</h3>
-                    <a href="https://www.bulletheads.org/" target="_blank"><img class="projectLogos" src="./images/bthd_logo.PNG" alt="Bulletheads Logo."></a>
-                    <br>
-                    <a href="https://www.bulletheads.org/" target="_blank">Bulletheads Gaming Community</a>
+    <div id="page-container">
+        <div id="content-wrap">
+            <nav>
+                <ul class="nav">
+                    <li><a href="https://www.bubeez.dev">HOME</a></li>
+                    <li><a onclick="about()">ABOUT</a></li>
+                    <li><a onclick="specialties()">SPECIALTIES</a></li>
+                </ul>
+            </nav>
+            <header>
+                <br>
+                <img id="logo" src="./images/logo_white.png" alt="bubeez development logo">
+            </header>
+            <main>
+                <section id="projects">
+                    <h1>Projects</h1>
+                    <p>
+                        <h3>September 2020 - (Ongoing)</h3>
+                        <a href="https://www.bulletheads.org/" target="_blank"><img class="projectLogos" src="./images/bthd_logo.PNG" alt="Bulletheads Logo."></a>
+                        <br>
+                        <a href="https://www.bulletheads.org/" target="_blank">Bulletheads Gaming Community</a>
+                        <br><br>
+                        Web design and development project. Written in HTML, CSS, and JavaScript.
+                    </p>
+                    <hr>
+                    <p>
+                        <h3>June 2020 - (Ongoing)</h3>
+                        <a href="https://www.announcementbot.live/" target="_blank"><img class="projectLogos" src="./images/bent-md.png" alt="An image of Announcement Bot."></a>
+                        <br>
+                        <a href="https://www.announcementbot.live/" target="_blank">Announcement Bot</a>
+                        <br>
+                        A <a href="https://discord.com/" target="_blank">Discord</a> bot for embedded announcements!
+                        <br><br>
+                        Bot development project in addition to website. Bot written in Python. Website written in HTML, CSS, and JavaScript.
+                    </p>
+                </section>
+                <section id="about">
+                    <h1>About</h1>
+                    <img id="me" src="./images/chris.png" alt="A picture of Chris.">
                     <br><br>
-                    Web design and development project. Written in HTML, CSS, and JavaScript.
-                </p>
-                <hr>
-                <p>
-                    <h3>June 2020 - (Ongoing)</h3>
-                    <a href="https://www.announcementbot.live/" target="_blank"><img class="projectLogos" src="./images/bent-md.png" alt="An image of Announcement Bot."></a>
-                    <br>
-                    <a href="https://www.announcementbot.live/" target="_blank">Announcement Bot</a>
-                    <br>
-                    A <a href="https://discord.com/" target="_blank">Discord</a> bot for embedded announcements!
+                    <strong>What is "bubeez?"</strong>
                     <br><br>
-                    Bot development project in addition to website. Bot written in Python. Website written in HTML, CSS, and JavaScript.
-                </p>
-            </div>
-        </section>
-        <section id="about">
-            <div>
-                <h1>About</h1>
-                <img id="me" src="./images/chris.png" alt="A picture of Chris.">
-                <br><br>
-                <strong>What is "bubeez?"</strong>
-                <br><br>
-                Hi, I'm Chris! 
-                <br><br>
-                Bubbies, or bubeez (as I like to spell it), 
-                is a nickname my wife started calling me several years ago. 
-                Now my young daughter calls me it too!
-                <br><br>
-                <strong>Contact</strong>
-                <br><br>
-                <strong>Email:</strong> bubeez <em>(at)</em> bubeez.dev
-            </div>
-        </section>
-        <section id="specialties">
-            <div>
-                <h1>Specialties</h1>
-                    <p>Experienced with the following languages and services:</p>
-                    <ul>
-                        <li><a href="https://www.java.com/" target="_blank"><img class="logoHeight" src="./images/java.png" alt="The Java logo."></a></li>
-                        <li><a href="https://www.python.org/" target="_blank"><img class="logoWidth" src="./images/python.png" alt="The Python logo."></a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img class="logoHeight" src="./images/js.png" alt="The JavaScript logo."></a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="logoHeight" src="./images/html5.png" alt="The HTML 5 logo."></a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img class="logoHeight" src="./images/css3.png" alt="The CSS 3 logo."></a></li>
-                        <li><a href="https://www.digitalocean.com/" target="_blank"><img class="logoWidth" src="./images/digitalocean.png" alt="The Digital Ocean logo."></a></li>
-                        <li><a href="https://www.docker.com/" target="_blank"><img class="logoWidth" src="./images/docker.png" alt="The Docker logo."></a></li>
-                        <li><a href="https://www.heroku.com/" target="_blank"><img class="logoHeight" src="./images/heroku.png" alt="The Heroku logo."></a></li>
-                    </ul>
-            </div>
-        </section>
+                    Hi, I'm Chris! 
+                    <br><br>
+                    Bubbies, or <strong>bubeez</strong> <em>(as I like to spell it)</em>, 
+                    is a nickname my wife started calling me several years ago. 
+                    Now my young daughter calls me it too!
+                    <br><br>
+                    <strong>Contact</strong>
+                    <br><br>
+                    <strong>Email:</strong> bubeez <em>(at)</em> bubeez.dev
+                    <br><br>
+                    <a href="https://www.linkedin.com/in/cwblount" target="_blank"><img class="social" src="/images/linkedin.png" alt="LinkedIn logo"></a>
+                    <a href="https://github.com/bubeez" target="_blank"><img class="social" src="/images/github.png" alt="GitHub logo"></a>
+                </section>
+                <section id="specialties">
+                    <h1>Specialties</h1>
+                        <p>Experienced with the following languages and services:</p>
+                        <ul>
+                            <li><a href="https://developer.android.com/" target="_blank"><img class="logoWidth" src="./images/android.png" alt="The Android robot."></a></li>
+                            <li><a href="https://www.java.com/" target="_blank"><img class="logoHeight" src="./images/java.png" alt="The Java logo."></a></li>
+                            <li><a href="https://www.python.org/" target="_blank"><img class="logoWidth" src="./images/python.png" alt="The Python logo."></a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img class="logoHeight" src="./images/js.png" alt="The JavaScript logo."></a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="logoHeight" src="./images/html5.png" alt="The HTML 5 logo."></a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img class="logoHeight" src="./images/css3.png" alt="The CSS 3 logo."></a></li>
+                            <li><a href="https://www.digitalocean.com/" target="_blank"><img class="logoWidth" src="./images/digitalocean.png" alt="The Digital Ocean logo."></a></li>
+                            <li><a href="https://www.docker.com/" target="_blank"><img class="logoWidth" src="./images/docker.png" alt="The Docker logo."></a></li>
+                            <li><a href="https://www.heroku.com/" target="_blank"><img class="logoHeight" src="./images/heroku.png" alt="The Heroku logo."></a></li>
+                        </ul>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <img class="logo-sm" src="/images/logo_sm_wht.png" alt="Small logo">
+        </footer>
     </div>
 </body>
 </html>

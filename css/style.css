@@ -21,7 +21,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#nav {
+nav {
     background-color: #FE7A71;
     height: 45px;
     position: fixed;
@@ -29,13 +29,13 @@ a:hover {
     width: 100%;
 }
 
-#nav a {
+.nav a {
     color: white;
     font-weight: normal;
     cursor: pointer;
 }
 
-#top {                                     /* HEADER */
+header {                                     /* HEADER */
     background-color: #212845;
     height: 185px;
     text-align: center;
@@ -51,7 +51,7 @@ ul {
     padding: 5px;
 }
 
-#nav li {
+nav li {
     display: inline-block;
 }
 
@@ -101,4 +101,29 @@ hr {
     border: none;
     height: 3px;
     background-color:#FE7A71;
+}
+
+footer {
+    background-color: #FE7A71;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-sm {
+    height: 90px;
+    padding-top: 5px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 200px;
+}
+
+.social {
+    height: 50px;
 }
